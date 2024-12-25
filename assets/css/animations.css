@@ -1,0 +1,102 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-color) }
+}
+
+.parallax {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: transform 0.3s ease;
+}
+
+.card-flip {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-flip:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes rotateIn {
+    from {
+        transform: perspective(1000px) rotateX(60deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(1000px) rotateX(0);
+        opacity: 1;
+    }
+}
+
+.rotate-3d {
+    animation: rotateIn 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.skill-tag {
+    animation: floatUp 0.5s ease-out forwards;
+    opacity: 0;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+.project-card {
+    animation: floatUp 0.8s ease-out forwards;
+    opacity: 0;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+@keyframes progressBar {
+    from { width: 0; }
+    to { width: var(--progress); }
+}
+
+.progress-bar::after {
+    animation: progressBar 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.timeline-item {
+    animation: slideIn 0.6s ease-out forwards;
+    opacity: 0;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+@keyframes formLabelFloat {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1.5rem);
+    }
+}
+
+.form-input:focus ~ .form-label {
+    animation: formLabelFloat 0.3s ease-out forwards;
+} 
