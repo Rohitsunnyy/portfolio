@@ -7,68 +7,283 @@
     <meta name="description" content="Data Scientist and Machine Learning Engineer specializing in AI, NLP, and advanced analytics">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>RG</text></svg>">
 </head>
 <body>
-    <div class="cursor"></div>
+    <!-- <div class="cursor"></div> -->
+    <!-- <div id="particles-js"></div> -->
     
-    <nav class="navbar">
-        <div class="logo">RG</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="gradient-text">Rohit Gaddam</h1>
-            <h2 class="typewriter">Data Scientist & ML Engineer</h2>
-            <p class="hero-description">
-                Transforming data into actionable insights through AI innovation
-            </p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Get in Touch</a>
+    <header class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-text">RG</span>
+                <span class="brand-subtitle">Data Professional</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="hero-image parallax">
-            <!-- Add your professional photo here -->
+    </header>
+
+    <section id="home" class="hero">
+        <div class="canvas-animation canvas-animation--bg">
+            <canvas id="canvas-animation"></canvas>
         </div>
+
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <div class="text-glitch" data-text="Rohit Gaddam">
+                    Rohit Gaddam
+                    <span aria-hidden="true">Rohit Gaddam</span>
+                    <span aria-hidden="true">Rohit Gaddam</span>
+                </div>
+                <div class="rotating-text">
+                    <!-- The JavaScript will handle the content -->
+                </div>
+                <p class="hero-description reveal-text">
+                    Transforming complex data into actionable insights through innovative AI solutions and advanced analytics
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary glow-effect">View Projects</a>
+                    <a href="#contact" class="btn secondary outline-effect">Get in Touch</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-glitch" style="background-image: url('assets/images/IMG_1115.jpg')"></div>
+                </div>
+            </div>
+        </div>
+
+       
     </section>
 
     <section id="about" class="about-section">
-        <div class="about-container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content rotate-3d">
-                <div class="about-text">
-                    <p>Data Scientist with expertise in AI, Machine Learning, and NLP. Currently pursuing MS in Data Analytics Engineering at Northeastern University.</p>
-                    <p>Experienced in building end-to-end ML solutions and working with cutting-edge technologies to solve complex business problems.</p>
-                </div>
-                
-                <div class="skills-container">
-                    <h3>Technical Expertise</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Languages</h4>
-                            <div class="skill-items">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">C</span>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3 class="highlight-text">Data Professional & AI Specialist</h3>
+                        <p class="lead">Pursuing MS in Data Analytics Engineering at Northeastern University (Expected 2024)</p>
+                        <p>As a passionate Data Scientist and ML Engineer, I specialize in developing innovative AI solutions 
+                        that transform complex data challenges into actionable business insights. With expertise in machine 
+                        learning, deep learning, and data engineering, I focus on creating scalable solutions that drive 
+                        real-world impact.</p>
+                        <p>My experience spans across predictive modeling, natural language processing, and big data analytics, 
+                        with a proven track record of implementing end-to-end ML pipelines and optimization solutions.</p>
+                        <div class="key-highlights">
+                            <div class="highlight-item">
+                                <i class="bi bi-code-square"></i>
+                                <span>2+ Years Experience</span>
                             </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>ML/AI</h4>
-                            <div class="skill-items">
-                                <span class="skill-tag">TensorFlow</span>
-                                <span class="skill-tag">PyTorch</span>
-                                <span class="skill-tag">Scikit-learn</span>
+                            <div class="highlight-item">
+                                <i class="bi bi-graph-up"></i>
+                                <span>15+ ML Projects</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-cloud"></i>
+                                <span>Cloud & MLOps</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="skills-container">
+                        <h3>Technical Expertise</h3>
+                        <div class="skill-categories">
+                            <div class="skill-category">
+                                <h4><i class="bi bi-code-slash"></i> Core Skills</h4>
+                                <div class="skill-items">
+                                    <span class="skill-tag">Machine Learning</span>
+                                    <span class="skill-tag">Deep Learning</span>
+                                    <span class="skill-tag">NLP</span>
+                                    <span class="skill-tag">Data Engineering</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="bi bi-cpu"></i> Technologies</h4>
+                                <div class="skill-items">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">TensorFlow</span>
+                                    <span class="skill-tag">PyTorch</span>
+                                    <span class="skill-tag">Scikit-learn</span>
+                                    <span class="skill-tag">PySpark</span>
+                                    <span class="skill-tag">SQL</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="bi bi-cloud-fill"></i> Tools & Platforms</h4>
+                                <div class="skill-items">
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">Kubernetes</span>
+                                    <span class="skill-tag">MLflow</span>
+                                    <span class="skill-tag">Airflow</span>
+                                    <span class="skill-tag">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" data-aos="fade-up">
+                    <i class="bi bi-mortarboard"></i> My Education
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up">
+                    Education Is The Foundation Of Curiosity, And In Data Science, It's The Key To Transforming Questions Into Discoveries, Insights, And Innovation.
+                </p>
+            </div>
+            
+            <div class="education-cards">
+                <!-- Northeastern University -->
+                <div class="edu-card" data-aos="fade-up">
+                    <div class="edu-card-image">
+                        <img src="assets/images/images.jpg" alt="Northeastern University">
+                        <div class="edu-overlay"></div>
+                    </div>
+                    <div class="edu-card-content">
+                        <h3 class="edu-title">Masters Of Science In Data Science</h3>
+                        <h4 class="edu-school">Northeastern University</h4>
+                        <div class="edu-period">
+                            <span class="year">2022-2024</span>
+                            <span class="status">Graduated</span>
+                        </div>
+                        <div class="edu-details">
+                            <h5>Key Courses:</h5>
+                            <ul>
+                                <li>Statistical Learning</li>
+                                <li>Machine Learning Operations(MLOps)</li>
+                                <li>Data Mining and Machine Learning</li>
+                                <li>Deep Learning and Neural Networks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medi-Caps University -->
+                <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-card-image">
+                        <img src="assets/images/images2.jpeg" alt="Medi-Caps University">
+                        <div class="edu-overlay"></div>
+                    </div>
+                    <div class="edu-card-content">
+                        <h3 class="edu-title">Bachelor Of Technology In Computer Science</h3>
+                        <h4 class="edu-school">Vidya Jyothi Institute of Technology</h4>
+                        <div class="edu-period">
+                            <span class="year">2017-2021</span>
+                            <span class="status">Graduated</span>
+                        </div>
+                        <div class="edu-details">
+                            <h5>Achievements:</h5>
+                            <ul>
+                                <li>Awarded Best Innovator for annual technical fest</li>
+                                <li>Technical Club Lead</li>
+                                <li>Published ML Research Paper</li>
+                                <li>Master of Multi-Tasking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <!-- Graduate Teaching Assistant -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Graduate Teaching Assistant</h3>
+                            <span class="company">Northeastern University</span>
+                        </div>
+                        <p>As a TA for Customer Value and Enterprise Analytics, I supported over 100 students by clarifying complex concepts and providing tailored academic support. I also assisted the professor in structuring the course and managing student engagement to enhance the learning environment.</p>
+                    </div>
+                </div>
+                
+                <!-- Data Scientist -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Scientist</h3>
+                            <span class="company">Datics</span>
+                        </div>
+                            <p>Collaborated with a leading financial service provider to tackle client retention challenges. Utilized Pandas and NumPy for data structuring and AWS S3 for data management. Developed a Logistic Regression-based AI churn prediction model, enhancing accuracy by 15% with CI/CD pipelines. Implemented Apache Airflow for ETL processes and Tableau for visual analytics, reducing client churn by 5-10% through targeted marketing strategies.</p>
+                      
+                    </div>
+                </div>
+           
+                <div class="timeline">
+                    <!-- Data Scientist -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Data Scientist</h3>
+                                <span class="company">Affluent Global Services</span>
+                            </div>
+                            <p>Managed over 1M+ customer data points for segmentation and targeted marketing, resulting in a 20% increase in new customer acquisition. Developed predictive models using Linear Regression and K-means clustering, and optimized data processes with Docker and CI/CD, enhancing decision-making and increasing customer satisfaction by 25% through advanced Tableau visualizations.</p>
+                        </div>
+                    </div>
+                    
+                <!-- Data Scientist -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Scientist</h3>
+                            <span class="company">Stonedge Technologies And Robotics</span>
+                        </div>
+                            <p>As a Data Analyst Intern, I leveraged Power BI to transform complex datasets into actionable insights, significantly enhancing strategic decision-making. My analytical expertise contributed to optimizing operational processes and driving business growth through detailed data visualization and trend analysis.</p>
+                            
+                      
+                    </div>
+                </div>
+           
+           
             </div>
         </div>
     </section>
@@ -80,7 +295,8 @@
             <div class="project-card card-flip">
                 <div class="card-front">
                     <h3>Patient Insight Platform</h3>
-                    <img src="assets/img/project1.jpg" alt="Project Preview">
+                    <!-- Use placeholder for project1 -->
+                    <img src="https://via.placeholder.com/400x300.png?text=Patient+Insight+Platform" alt="Project Preview">
                 </div>
                 <div class="card-back">
                     <h3>Patient Insight Platform</h3>
@@ -101,7 +317,8 @@
             <div class="project-card card-flip">
                 <div class="card-front">
                     <h3>Bank Marketing Segmentation</h3>
-                    <img src="assets/img/project2.jpg" alt="Project Preview">
+                    <!-- Use placeholder for project2 -->
+                    <img src="https://via.placeholder.com/400x300.png?text=Bank+Marketing+Segmentation" alt="Project Preview">
                 </div>
                 <div class="card-back">
                     <h3>Bank Marketing Segmentation</h3>
@@ -119,64 +336,62 @@
         </div>
     </section>
 
-    <section id="resume" class="resume-section">
-        <h2 class="section-title">Resume</h2>
-        <div class="resume-container">
-            <div class="resume-header">
-                <div class="download-resume">
-                    <a href="assets/files/Rohit_Gaddam_Resume.pdf" class="btn primary" download>
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                </div>
-            </div>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
             
-            <div class="resume-content">
-                <div class="resume-timeline">
-                    <div class="timeline-item" data-aos="fade-up">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Data Scientist</h3>
-                            <h4>Financial Services Provider</h4>
-                            <p class="timeline-date">Feb 2024 - Jul 2024</p>
-                            <ul class="timeline-details">
-                                <li>Built AI-powered churn prediction model using Logistic Regression</li>
-                                <li>Designed data transformation workflows using Apache Airflow</li>
-                                <li>Partnered with marketing teams to visualize client trends using Tableau</li>
-                            </ul>
+            <div class="skills-container">
+                <div class="hexagon-grid">
+                    <!-- Programming Languages -->
+                    <div class="hexagon-wrapper" data-category="Languages">
+                        <div class="hexagon">
+                            <img src="assets/skills/python.png" alt="Python">
+                            <div class="skill-name">Python</div>
+                        </div>
+                    </div>
+                    <div class="hexagon-wrapper" data-category="Languages">
+                        <div class="hexagon">
+                            <img src="assets/images/skills/sql.png" alt="SQL">
+                            <div class="skill-name">SQL</div>
                         </div>
                     </div>
 
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Data Scientist</h3>
-                            <h4>Microsoft Affluent Global Services Pvt. Ltd</h4>
-                            <p class="timeline-date">Jun 2020 - Jun 2022</p>
-                            <ul class="timeline-details">
-                                <li>Processed 1M+ customer segmentation data through EDA</li>
-                                <li>Created predictive models using Linear Regression and K-means clustering</li>
-                                <li>Optimized data workflows using Docker and CI/CD</li>
-                            </ul>
+                    <!-- Frameworks -->
+                    <div class="hexagon-wrapper" data-category="Frameworks">
+                        <div class="hexagon">
+                            <img src="assets/images/skills/tensorflow.png" alt="TensorFlow">
+                            <div class="skill-name">TensorFlow</div>
                         </div>
                     </div>
+                    <div class="hexagon-wrapper" data-category="Frameworks">
+                        <div class="hexagon">
+                            <img src="assets/images/skills/pytorch.png" alt="PyTorch">
+                            <div class="skill-name">PyTorch</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="hexagon-wrapper" data-category="Tools">
+                        <div class="hexagon">
+                            <img src="assets/images/skills/docker.png" alt="Docker">
+                            <div class="skill-name">Docker</div>
+                        </div>
+                    </div>
+                    <div class="hexagon-wrapper" data-category="Tools">
+                        <div class="hexagon">
+                            <img src="assets/images/skills/aws.png" alt="AWS">
+                            <div class="skill-name">AWS</div>
+                        </div>
+                    </div>
+
+                    <!-- Add more hexagons for other skills -->
                 </div>
 
-                <div class="skills-progress">
-                    <h3>Skills Proficiency</h3>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar">
-                            <div class="skill-name">Python</div>
-                            <div class="progress-bar" data-progress="95"></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Machine Learning</div>
-                            <div class="progress-bar" data-progress="90"></div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Deep Learning</div>
-                            <div class="progress-bar" data-progress="85"></div>
-                        </div>
-                    </div>
+                <div class="skills-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Languages">Languages</button>
+                    <button class="filter-btn" data-filter="Frameworks">Frameworks</button>
+                    <button class="filter-btn" data-filter="Tools">Tools</button>
                 </div>
             </div>
         </div>
@@ -222,10 +437,57 @@
         </div>
     </section>
 
-    <script src="assets/js/cursor.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rohit Gaddam</h3>
+                <p>Data Scientist & ML Engineer</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/grohitkumar" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Rohitsunnyy" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:gaddamsrohitkumar@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>Boston, MA</p>
+                <p>United States</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rohit Gaddam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="scroll-progress"></div>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- <script src="assets/js/cursor.js"></script> -->
     <script src="assets/js/effects.js"></script>
 
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+    <!-- <script src="assets/js/particles.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html> 
